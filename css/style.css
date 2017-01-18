@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none; }
+
+.header {
+  background: #e9f3fa;
+  width: 100%; }
+  .header .cont {
+    max-width: 1200px;
+    margin: 0 auto; }
+    .header .cont ul > li {
+      display: inline-block;
+      padding: 5px 30px; }
+      .header .cont ul > li > a :active {
+        color: #fff;
+        background: #504f51;
+        border-radius: 8px; }
+      .header .cont ul > li > a :focus {
+        color: #fff;
+        background: #504f51;
+        border-radius: 8px; }
+    .header .cont :hover {
+      color: #fc635e;
+      cursor: pointer; }
+  .header .logo {
+    width: 200px;
+    margin: -25px 30px; }
+
+.main .leftside {
+  width: 500px;
+  height: 500px;
+  float: left;
+  margin: 40px 340px; }
+  .main .leftside img {
+    width: 100%; }
+.main .rightside {
+  float: left;
+  margin-top: 80px; }
+  .main .rightside > ul > li {
+    padding: 10px; }
+    .main .rightside > ul > li > a > button {
+      background: #e9f3fa;
+      border-radius: 8px;
+      width: 250px;
+      padding: 10px; }
+  .main .rightside :hover {
+    color: #fc635e;
+    cursor: pointer; }
+  .main .rightside :active {
+    color: #fff;
+    background: #504f51;
+    border-radius: 8px; }
+  .main .rightside :focus {
+    color: #fff;
+    background: #504f51;
+    border-radius: 8px; }
+
+button {
+  outline: none;
+  border: none;
+  width: 150px;
+  background: transparent;
+  font-size: 14px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: #4f4e50;
+  font-weight: 500;
+  font-family: 'Lato, regular, sans-serif'; }
+
+.mobile {
+  display: none; }
+
+@media screen and (max-width: 991px) {
+  .header {
+    display: none; }
+
+  .main {
+    display: none; }
+
+  .mobile {
+    display: block;
+    background: #e9f3fa;
+    width: 100%;
+    text-align: center; }
+    .mobile .logo {
+      width: 30%;
+      display: block;
+      margin: 0 auto; }
+    .mobile > ul > li {
+      padding: 15px; }
+    .mobile button {
+      outline: none;
+      border: none;
+      width: 250px;
+      background: #fff;
+      font-size: 14px;
+      line-height: 2;
+      text-transform: uppercase;
+      color: #4f4e50;
+      font-weight: 500;
+      font-family: 'Lato, regular, sans-serif';
+      border-radius: 8px;
+      padding: 5px; }
+
+  .clear {
+    clear: both; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$bg: #e9f3fa;
+$hover: #fc635e;
+$font-color: #4f4e50;
+$active: #504f51;
+$font-active: #fff;
+
+body {
+
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+.header {
+  background: $bg;
+  width: 100%;
+  .cont{
+    max-width: 1200px;
+    margin:0 auto;
+    ul>li {
+      display: inline-block;
+      padding: 5px 30px;
+      >a {
+        :active {
+          color: $font-active;
+          background: $active;
+          border-radius: 8px;
+        }
+        :focus {
+          color: $font-active;
+          background: $active;
+          border-radius: 8px;
+        }
+
+      }
+    }
+    :hover {
+      color: $hover;
+      cursor: pointer;
+    }
+
+  }
+  .logo {
+    width: 200px;
+    margin:-25px 30px;
+  }
+}
+
+
+.main {
+  .leftside {
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin: 40px 340px;
+    img {
+      width: 100%;
+    }
+  }
+  .rightside {
+    float: left;
+    margin-top: 80px;
+    > ul > li {
+      padding: 10px;
+
+    > a > button {
+      background: $bg;
+      border-radius: 8px;
+      width: 250px;
+      padding: 10px;
+    }
+  }
+    :hover {
+      color: $hover;
+      cursor: pointer;
+    }
+
+    :active {
+      color: $font-active;
+      background: $active;
+      border-radius: 8px;
+    }
+    :focus {
+      color: $font-active;
+      background: $active;
+      border-radius: 8px;
+    }
+  }
+
+}
+
+button {
+  outline: none;
+  border: none;
+  width: 150px;
+  background: rgba(0,0,0,0);
+  font-size:14px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: $font-color;
+  font-weight:500;
+  font-family: 'Lato, regular, sans-serif';
+
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and(max-width: 991px){
+  .header {
+    display: none;
+  }
+  .main {
+    display: none;
+  }
+
+
+  .mobile {
+    display: block;
+    background: $bg;
+    width: 100%;
+    text-align: center;
+    .logo {
+      width: 30%;
+      display: block;
+      margin:0 auto;
+    }
+    >ul>li {
+      padding: 15px;
+    }
+    button {
+      outline: none;
+      border: none;
+      width: 250px;
+      background: #fff;
+      font-size:14px;
+      line-height: 2;
+      text-transform: uppercase;
+      color: $font-color;
+      font-weight:500;
+      font-family: 'Lato, regular, sans-serif';
+      border-radius: 8px;
+      padding: 5px;
+
+    }
+  }
+
+
+
+  .clear {
+    clear: both;
+  }
+}
+
